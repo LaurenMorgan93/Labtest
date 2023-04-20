@@ -14,6 +14,8 @@ void draw()
   flag2.drawFlag();
 }
 
+ ArrayList<Flag> flags = new ArrayList <Flag>();
+
 
 
 class Flag
@@ -25,6 +27,8 @@ class Flag
   w = j;
   h = k;
   }
+ 
+ 
   
   public void drawFlag()
   {
@@ -32,7 +36,7 @@ class Flag
   {
     fill(255,0,0);
     rect(100, 400, 600, 200);
-    for (int l = 0; i < 6; i = i+50) {
+    for (int l = 0; i < 5; i = i+50) {
       
       float startx = 100;
       float starty = 400 + i*50;
@@ -59,6 +63,7 @@ class Flag
     }
   }
   }
+  
     
   
 
