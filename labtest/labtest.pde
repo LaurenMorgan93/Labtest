@@ -19,6 +19,13 @@ public void altdrawing(){
   strokeWeight(2);
   fill(random(255), random(255), 255);
   rect(startingx, startingy, wide,high);
+  startingx ++;
+startingy += random(0,2);
+  if(startingx >= 1000 || startingy >= 1000)
+  {
+   startingy -= random(0, 1000);
+   startingx -= random(0,1000);
+  }
 }
 
 
@@ -29,13 +36,7 @@ void draw()
   flag1.drawFlag();
   flag2.drawFlag();
   altdrawing();  
-startingx ++;
-startingy += random(0,2);
-  if(startingx >= 1000 || startingy >= 1000)
-  {
-   startingy -= random(0, 1000);
-   startingx -= random(0,1000);
-  }
+
  
 }
 
