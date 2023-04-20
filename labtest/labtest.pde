@@ -33,16 +33,24 @@ class Flag
       for (int i = 0; i < 4; i = i+1) 
   {
     rect(100, 400, 600, 200);
-    for (int l = 0; i < 5; i = i+1) {
-      fill(255);
+    for (int l = 0; i < 5; i = i+50) {
+      
       float startx = 100;
       float starty = 400 + i*50;
       float endx = 600;
       float endy = 400+ i*50;
+      
       strokeWeight(5);
+      stroke(0);
       line(startx,starty,endx,endy); 
-      rect(startx,400+i+50,600,200);
       fill(255,0,0);
+     
+      line(startx, starty,endx, endy);
+      //rect(startx,400+i+50,600,200);
+      fill(255, 204, 0);
+   
+
+     
     }
   }
   }
